@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "styles",
+			"path": "styles"
+		},
+		{
+			"name": "svg",
+			"path": "svg"
+		},
+		{
+			"path": "scripts"
+		},
+		{
+			"path": "fonts"
+		},
+		{
+			"path": "images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fonts"
+	}
+}
