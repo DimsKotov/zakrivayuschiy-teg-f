@@ -310,11 +310,14 @@
 }
 
 .card__save-button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
   background-color: var(--bg-color);
+  color: var(--button-text-color);
   font-weight: var(--font-weight-paragraf);
   min-block-size: 55px;
   min-inline-size: 340px;
@@ -324,9 +327,31 @@
   justify-self: center;
 }
 
+.card__save-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #000;
+  transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.card__save-button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 0 #000;
+}
+
+.card__save-button:hover::before {
+  width: 100%;
+  background-color: #000;
+}
+
 .button__svg {
   block-size: 20px;
   inline-size: 20px;
+  mix-blend-mode: difference;
 }
 
 .footer form {
@@ -348,7 +373,6 @@
 }
 
 .footer .button__text {
-  color: var(--button-text-color);
   text-transform: none;
 }
 
