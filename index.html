@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
-    <script src="./scripts/like.js"></script>
   </head>
   <body class="page">
     <header class="header">
@@ -37,10 +36,8 @@
           основами и настроиться на учёбу. И, возможно, подумать, как новые
           знания могут повлиять на ваше будущее.
         </p>
-        <p class="main__section-paragraf">
-          Место для ваших воспоминаний о начале обучения.
-        </p>
-        <button class="card__icon-button" type="button">
+        <p class="main__section-paragraf">Было интересно познавать новое.</p>
+        <button class="card__icon-button">
           <svg
             class="like-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +91,9 @@
           будет слишком сложно? что, если я не справлюсь?
         </p>
         <p class="main__section-paragraf">
-          Место для ваших воспоминаний о начале первого спринта.
+          Было интересно и познавательно проходить первую теоретическую часть,
+          но когда я приступил к первой ПР, понял, что ничего не помню. Это было
+          страшно, пришлось всё перечитывать.
         </p>
         <button class="card__icon-button">
           <svg
@@ -147,9 +146,7 @@
           могла быстро померкнуть и смениться ожиданием провала. Или вы,
           наоборот, могли вдохновиться успехами и поверить в себя.
         </p>
-        <p class="main__section-paragraf">
-          Место для ваших воспоминаний об окончании первого спринта.
-        </p>
+        <p class="main__section-paragraf">Радости не было предела.</p>
         <button class="card__icon-button">
           <svg
             class="like-icon"
@@ -204,7 +201,7 @@
           старались просто сделать.
         </p>
         <p class="main__section-paragraf">
-          Место для ваших воспоминаний о начале второго спринта.
+          Было достаточно времени что бы стремиться к идеалу.
         </p>
         <button class="card__icon-button">
           <svg
@@ -259,9 +256,7 @@
           пожаловаться, если очередной макет просто так не поддавался. Осваивать
           что-то новое легче, когда рядом есть единомышленники, не правда ли?
         </p>
-        <p class="main__section-paragraf">
-          Место для ваших воспоминаний об окончании второго спринта.
-        </p>
+        <p class="main__section-paragraf">Абсолютно верно.</p>
         <button class="card__icon-button">
           <svg
             class="like-icon"
@@ -314,7 +309,8 @@
           посмотреть на задачу под другим углом.
         </p>
         <p class="main__section-paragraf">
-          Место для ваших воспоминаний о начале третьего спринта.
+          В такой ситуации нужно было отвлечься на 1-2 часа и решение потом
+          находилось на свежую голову.
         </p>
         <button class="card__icon-button">
           <svg
@@ -369,7 +365,7 @@
           моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
         </p>
         <p class="main__section-paragraf">
-          Место для ваших воспоминаний об окончании третьего спринта.
+          Черпал из своей мотивации освоить профессию веб-разработчика.
         </p>
         <button class="card__icon-button">
           <svg
@@ -426,8 +422,7 @@
           есть результат.
         </p>
         <p class="main__section-paragraf">
-          Место, чтобы остановиться, подумать и написать, что вы чувствуете в
-          этой точке пути.
+          Эх, было бы в сутках больше часов...
         </p>
         <button class="card__icon-button">
           <svg
@@ -468,26 +463,26 @@
     </main>
     <footer class="footer">
       <button
-        class="card__like-button"
+        class="card__save-button"
         type="button"
-        onclick="window['save'].showModal()"
-        aria-controls="save"
+        onclick="window['dialog-id'].showModal()"
+        aria-controls="dialog-id"
       >
         <svg class="button__svg" width="40" height="40" viewBox="0 0 40 40">
           <use href="./svg/floppy.svg#icon"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog class="footer__save-dialog" id="save">
+      <dialog class="footer__save-dialog" id="dialog-id">
         <form>
           <svg width="40" height="40" viewBox="0 0 40 40">
             <use href="./svg/floppy.svg#icon"></use>
           </svg>
           <span class="button__text">вставьте дискету, чтобы продолжить</span>
           <button
-            class="card__like-button"
+            class="card__save-button"
             type="button"
-            onclick="window['save'].close()"
+            onclick="window['dialog-id'].close()"
           >
             <span class="button__text">ок</span>
           </button>
