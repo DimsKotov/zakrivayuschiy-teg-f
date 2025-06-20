@@ -1,11 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-acent: "PressStart2P-Regular", monospace;
-  --font-main: "Inter-Variable", monospace;
+  --font-acent: "PressStart2P";
+  --font-main: "Inter-Variable";
   --font-weight-paragraf: 400;
   --font-weight-title: 700;
   --shadow-color: #c4bebe;
-  --inline-size: 700px;
   --button-text-color: #fff;
   --bg-color: #fff;
   --border-color: #000;
