@@ -83,11 +83,11 @@
 
 .main__section-paragraf {
   grid-column: 1/4;
-  font-variation-settings: "wght" 400;
   font-size: 18px;
   margin-block-end: 26px;
   margin-inline-start: 25px;
   margin-inline-end: 25px;
+  line-height: 21px;
 }
 
 .filter__grayscale {
@@ -223,7 +223,6 @@
 }
 
 .section__save-dialog:open {
-  margin-block-end: 385px;
   padding: 30px 15px;
   max-inline-size: 360px;
 }
@@ -287,7 +286,6 @@
   }
 
   .section__save-dialog:open {
-    margin-block-end: 240px;
     max-inline-size: 341px;
   }
 
